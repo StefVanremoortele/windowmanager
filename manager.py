@@ -86,6 +86,10 @@ class Manager:
             True
         )
 
+        pyautogui.moveTo(
+            self.windows[self.current_index].left + (self.windows[self.current_index].width / 2), self.windows[self.current_index].top + (self.windows[self.current_index].height / 2)
+        )
+
     def activate_window(self, index):
         window = self.windows[index]
         window.activate()
